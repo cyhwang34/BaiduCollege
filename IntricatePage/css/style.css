@@ -1,0 +1,538 @@
+*{margin:0;padding:0;}
+/*****positioned star******/
+.menu{
+	width:350px;
+	height:100vh;
+	display:inline-block;
+	float:left;
+	background-color: blue;
+}
+.menu>.primary{
+	width:100px;
+	height:100%;
+	background-color: #1d2531;
+	display: inline-block;
+	float: left;
+}
+.menu>.secondary{
+	width:250px;
+	height:100%;
+	background-color:#222c3c;
+	display: block;
+	margin-left: 100px;
+}
+.chat{
+	width:calc(100vw - 351px);
+	height:100vh;
+	background-color:#fff;
+	display: block;
+	margin-left:350px;
+}
+.chat>.base{
+	width:100%;
+	height:79px;
+	background-color: #fff;
+	display: block;
+	float: left;
+	border-bottom: 1px solid #999;
+}
+.chat>.chats{
+	width:399px;
+	height:calc(100vh - 80px);
+	background: #fff;
+	display: inline-block;
+	float:left;
+	border-right:1px solid #999;
+	overflow: hidden;
+}
+.chat>.chat_show{
+	width:calc(100vw - 750px);
+	height:calc(100vh - 80px);
+	background: #fff;
+	display: block;
+	margin-left: 400px;
+	padding-top: 80px;
+}
+/****menu>primary star*****/
+.primary>.items>p{
+	
+}
+.primary>.items>p>span{
+	display: block;
+	width:50px;
+	height:50px;
+	margin: 15px auto;
+	border-radius: 28px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.item1{
+	background-color: #2a9ef6;
+	border: 1px solid #2a9ef6;
+	background-image: url("../images/Item1.png");
+}
+.item2{
+	background-color: #9784e3;
+	border: 1px solid #9784e3;
+	background-image: url("../images/Item2.png");
+}
+.item3{
+	background-color: #ef4e32;
+	border: 1px solid #ef4e32;
+	background-image: url("../images/Item3.png");
+}
+.add_item{
+	background-color: #1d2531;
+	border: 1px solid #666;
+	background-image: url("../images/AddItem.png");
+}
+.primary{
+	position: relative;
+}
+.bottom_actions{
+	width:100%;
+	height:60px;
+	position: absolute;
+	bottom:0px;
+}
+.bottom_actions>p{
+	width:30px;
+	height:30px;
+	display:inline-block;
+}
+.bottom_actions span{
+	display: inline-block;
+	width:30px;
+	height:30px;
+	margin:5px 15px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.grid{
+	background-image: url("../images/Grid.png");
+}
+.setting{
+	background-image: url("../images/Settings.png");
+}
+/****menu>secondary star*****/
+.secondary>.parts{
+	width:200px;
+	margin: auto;
+}
+.secondary>.parts>div{
+	padding-top: 10px;
+	padding-bottom:10px;
+}
+.secondary>.parts>div:not(:first-child){
+	border-top: 1px solid #424d5d;
+}
+.secondary>.parts>div>h4{
+	color:#777;
+	line-height: 30px;
+	font-size: 12px;
+	display: block;
+	position: relative;
+}
+.secondary>.parts>div>p{
+	color:#ccc;
+	line-height: 36px;
+	font-size: 14px;
+	display: block;
+	position: relative;
+}
+.secondary>.parts>div span{
+	width:auto;
+	min-width: 20px;
+	height:20px;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	line-height:22px;
+}
+.num_span{
+	background-color: #2299f0;
+	border-radius: 20px;
+	padding:3px 6px;
+	text-align: center;
+}
+.sign_span{
+	padding:2px;
+	background-color: red;
+	border-radius: 200px;
+	text-align: center;
+}
+.secondary{
+	position: relative;
+}
+.secondary>.server_capactity{
+	position: absolute;
+	bottom: 10px;
+}
+.secondary>.server_capactity>p{
+	color:#ccc;
+	font-size: 14px;
+	display: block;
+	width:180px;
+	padding: 0 25px;
+	position: relative;
+}
+.secondary>.server_capactity>p>span{
+	display: inline-block;
+	position: absolute;
+	right: 0;
+}
+progress{
+	margin-left: 25px;
+    background:#2d3848;/*对于IE10+，firefox浏览器，可以用background设置进度条的背景色。*/
+    border:1px solid #2d3848;
+    border-radius: 6px;
+    width:200px;
+    height:6px;
+    -webkit-appearance: none;
+ }
+progress::-ms-fill{/*对于IE10+，用::-ms-fill设置进度条完成进度的背景色。*/
+    background: linear-gradient(90deg, #7858d6,#9c8ce3);
+    border-radius: 6px;
+}
+progress::-moz-progress-bar{/*对于firefox，用::-moz-progress-bar设置进度条完成进度的背景色。*/
+    background:linear-gradient(90deg, #7858d6,#9c8ce3);
+    border-radius: 6px;
+ }
+progress::-webkit-progress-bar{/*对于webkit浏览器，使用::-webkit-progress-bar设置进度条的背景色。*/
+    background:#2d3848;
+ }
+progress::-webkit-progress-value{/*对于webkit浏览器，使用::-webkit-progress-value设置进度条完成进度的背景色*/
+    background:linear-gradient(90deg, #7858d6,#9c8ce3);
+    border-radius: 6px;
+}
+/****chat>base star***/
+.base h2{
+ 	padding-left: 40px;
+ 	line-height: 80px;
+}
+.base{
+ 	background: red;
+ 	position: relative;
+}
+.base>div{
+ 	display: block;
+ 	position: absolute;
+ 	right: 0;
+ 	top: 0
+}
+.base>div>div{
+ 	display: inline-block;
+ 	margin:15px 0;
+ 	float: left;
+}
+.base>div>div.admin_face{
+ 	width:50px;
+ 	height: 50px;
+ 	background-image:url("../images/Face.png"); 
+ 	background-repeat: no-repeat;
+ 	position: relative;
+}
+.base>div>div.admin_face>p{
+ 	width:20px;
+ 	height:20px;
+ 	background-color: #fff;
+ 	border-radius: 10px;
+ 	background-image: url("../images/Status.png");
+ 	background-repeat: no-repeat;
+ 	background-position: center;
+ 	position: absolute;
+ 	bottom: 0;
+ 	right: 0;
+}
+.base>div>div.admin_name>p{
+	color: #999;
+	padding-left: 20px;
+	padding-right: 50px;
+	line-height: 25px;
+}
+.base>div>div.admin_name>p>b{
+	color:blue;
+}
+.base>div>div.admin_more>p{
+	color: #aaa;
+	padding-right: 20px;
+	font-size: 20px;
+	line-height: 50px;
+}
+/****chat>chats sta****/
+.search{
+	padding: 23.5px 0;
+	border-bottom: 1px solid #999;
+}
+.search>form{
+    position: relative;
+    width:300px;
+    margin: 0 auto;
+}
+.search>form>input{
+	font-size: 16px;
+	width: 100%;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	padding:6px;
+	padding-right: 0px;
+}
+.search>form>button{
+	width:50px;
+	height:30px;
+    position: absolute;
+    top: 1px;
+    right: 0px;
+    border-radius: 0 5px 5px 0;
+    background-image: url("../images/SearchIcon.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #fff;
+    border:0px solid #ccc;
+}
+.search>form>input::-webkit-input-placeholder{
+	color:#ccc;
+}
+.search>form>button:after {
+	content:;
+	border:1px solid #eee;
+	background-color: #fff;
+}
+.chats_list>ul{
+	list-style: none;
+}
+.chats_list li{
+	display: block;
+	width: 355px;
+	height:auto;
+	border-left: 3px solid #fff;
+	padding:10px 20px;
+	position: relative;
+	border-bottom: 1px solid #eee;
+}
+.chats_list li.active{
+	border-left: 3px solid blue;
+}
+.chats_list li p{
+	font-size: 14px;
+	line-height: 18px;
+}
+.chat_face{
+	display: inline-block;
+	float: left;
+}
+.chat_name{
+	display: inline-block;
+	float: left;
+	color:#ccc;
+}
+.chat_name>p{
+	padding-left: 20px;
+}
+.chat_name>p>b{
+	color:#333;
+	font-size: 16px;
+}
+.active>.chat_name>p>span{
+	background-color: blue;
+	border-radius: 10px;
+	width:10px;
+	height:10px;
+	display: inline-block;
+	margin-right: 10px;
+}
+.active>.chat_name>p>b{
+	color:blue;
+	line-height: 26px;
+}
+.chat_date{
+	display: inline-block;
+	line-height: 20px;
+	width:150px;
+	height: 40px;
+	text-align: right;
+}
+.chat_text{
+	display: block;
+	padding-top: 20px;
+	height:50px;
+}
+.chat_text>p{
+	display: inline-block;
+}
+li>.chat_text>.text_num{
+	display:none;
+}
+.active>.chat_text>p.text_cent{
+	display:inline-block;
+	width: 300px;
+	float:left;
+}
+
+.active>.chat_text>p.text_num{
+	display:inline-block;
+	width:25px;
+	height:25px;
+	background-color: blue;
+	border-radius: 50px;
+	color:#fff;
+	text-align: center;
+	line-height: 25px;
+	margin:12px;
+}
+/***chat_show star*****/
+.show_header{
+	padding:0 20px;
+	height:79px;
+	border-bottom: 1px solid #eee;
+	position: relative;
+}
+.show_header div{
+	display: inline-block;
+	margin-top: 10px
+}
+.show_header>.s_h_left{
+	margin:30px 15px;
+}
+.show_header>.s_h_right{
+	position: absolute;
+	right: 0;
+}
+.show_header>div>p>span{
+	width:10px;
+	height: 10px;
+	background-color: green;
+	border-radius: 10px;
+	display:inline-block;
+	margin-left: 15px;
+}
+.tools{
+	padding-right: 50px;
+	border-right: 1px solid #eee;
+}
+.arrows{
+	padding-left: 20px;
+	padding-right: 50px;
+}
+.UserIcon{
+	background-image: url(../images/UserIcon.png);
+	border-radius: 5px 0 0 5px;
+}
+.UploadIcon{
+	background-image: url(../images/UploadIcon.png);
+}
+.TrashIcon{
+	background-image: url(../images/TrashIcon.png);
+	border-radius: 0 5px 5px 0;
+}
+.ArrowLeft{
+	background-image: url(../images/ArrowLeft.png);
+	border-radius: 5px 0 0 5px;
+}
+.ArrowRight{
+	background-image: url(../images/ArrowRight.png);
+	border-radius: 0 5px 5px 0;
+}
+.tools>span{
+	margin:-3px;
+	padding:0;
+	width:30px;
+	height:30px;
+	background-color: #eee;
+	border: 1px solid #ccc;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.arrows>div>p{
+	margin:5px 20px;
+} 
+.arrows>div>span{
+	margin:-3px;
+	padding:0;
+	width:30px;
+	height:30px;
+	background-color: #eee;
+	border: 1px solid #ccc;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/*****show_body star*****/
+.show_body ul{
+	list-style: none;
+}
+.show_body li{
+	position: relative;
+	margin:10px 30px;
+}
+.show_body li>div{
+	margin-left: 70px;
+	position: relative;
+	margin-top: -50px;
+}
+.show_body li>div>p{
+	line-height: 24px;
+	font-size: 14px;
+}
+.show_body li>div>p>span{
+	font-size: 12px;
+	margin-left: 10px;
+	line-height: 28px;
+}
+.show_body ul>h4{
+	font-weight: 500px;
+	display: block;
+	background-color: #fff;
+	margin:0 auto;
+	width:120px;
+	padding:0 15px;
+	text-align: center;
+	line-height: 40px;
+	margin-top: -20px;
+	color:#ccc;
+}
+.show_body ul>h4>span{
+	color:#5eb4f5;
+}
+.show_imgs{
+	display: inline-block;
+	padding-top: 52px;
+}
+.show_imgs>a:hover>span{
+	display: inline-block;
+	width: 156px;
+	height: 100px;
+	background-color: rgba(0,0,0,0.6);
+	background-image: url("../images/ImgOpenIcon.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-left: -156px;
+}
+.show_form{
+	position: absolute;
+	bottom: 10;
+	margin-left: 30px;
+	width: calc(100% - 800px);
+}
+.show_form>form>span{
+	width:50px;
+	height:50px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("../images/AddItem.png");
+	border:1px solid #ccc;
+	background-color: #ccc;
+	float: left;
+}
+.show_form>form>input{
+	width:calc(100% - 80px);
+	height: 50px;
+	border: 1px solid #ccc;
+	display: inline-block;
+	float: left;
+	padding-left: 20px;
+}

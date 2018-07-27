@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>数学方法</title>
+	
+</head>
+<body>
+	<input id="first-number" type="number" name="" value="0" placeholder="first num">
+	<input id="second-number" type="number" name="" value="0" placeholder="second num">
+	<button id="add-btn">加</button>
+	<button id="minus-btn">减</button>
+	<button id="times-btn">乘</button>
+	<button id="divide-btn">除</button>
+	<p id="result">结果</p>
+	<script>
+		document.getElementById("add-btn").onclick = function() {
+			var a = document.getElementById("first-number").value;
+			var b = document.getElementById("second-number").value;
+			var c;
+			if(!isNaN(a)){
+				console.log("是字符串")
+				c = Number(b) + Number(a)
+			}else{
+				c = a + b ;
+			}
+			document.getElementById("result").innerHTML = c ;
+		}
+		document.getElementById("minus-btn").onclick = function() {
+			var a = document.getElementById("first-number").value;
+			var b = document.getElementById("second-number").value;
+			var c;
+			if(!isNaN(a)){
+				c = Number(a) - Number(b)
+			}else{
+				c = a - b ;
+			}
+			document.getElementById("result").innerHTML = c ;
+		}
+		document.getElementById("times-btn").onclick = function() {
+			var a = document.getElementById("first-number").value;
+			var b = document.getElementById("second-number").value;
+			var c;
+			if(!isNaN(a)){
+				c = Number(b) * Number(a)
+			}else{
+				c = a * b ;
+			}
+			document.getElementById("result").innerHTML = c ;
+		}
+		document.getElementById("divide-btn").onclick = function() {
+			var a = document.getElementById("first-number").value;
+			var b = document.getElementById("second-number").value;
+			var c;
+			if(Number(b)==0||b=="0"){
+				console.log("除数为0");
+				c="除数为0"
+			}else{
+				c = Number(a) / Number(b);
+			}
+			document.getElementById("result").innerHTML = c ;
+		}
+	</script>
+</body>
+</html>
